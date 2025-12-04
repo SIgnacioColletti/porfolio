@@ -120,19 +120,18 @@ h6 {
 
 .logo {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.25rem;
   transition: transform var(--transition-base);
   text-decoration: none;
+  color: var(--dark);
 }
 
-.logo img {
-  height: 45px;
-  width: auto;
-  display: block;
+.logo-text {
+  letter-spacing: -0.5px;
 }
 
 .logo:hover {
@@ -1187,7 +1186,7 @@ h6 {
 
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -1195,13 +1194,12 @@ h6 {
   margin-bottom: 1rem;
   text-decoration: none;
   transition: opacity 0.3s ease;
+  color: var(--white);
 }
 
-.footer-logo img {
-  height: 40px;
-  width: auto;
-  display: block;
-  filter: brightness(0) invert(1);
+.footer-logo .logo-text {
+  color: var(--white);
+  letter-spacing: -0.5px;
 }
 
 .footer-logo:hover {
@@ -1327,8 +1325,8 @@ h6 {
     display: flex;
   }
 
-  .logo img {
-    height: 35px;
+  .logo {
+    font-size: 1rem;
   }
 
   .nav-links {
